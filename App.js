@@ -25,15 +25,15 @@ app.post("/resta", (request, response) => {
   response.send({message: resultado})
 })
 
-app.post("/multiplicacion", (request, response) => {
-  const {numero1, numero2} = request.body
-  const resultado = numero1 * numero2;
-  response.send({message: resultado})
-})
-
 app.post("/division", (request, response) => {
   const {numero1, numero2} = request.body
   const resultado = numero1 / numero2;
+  response.send({message: resultado})
+})
+
+app.post("/multiplicacion", (request, response) => {
+  const {numero1, numero2} = request.body
+  const resultado = numero1 * numero2;
   response.send({message: resultado})
 })
 
